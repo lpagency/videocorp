@@ -1,0 +1,180 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+{% include '../home/header.html' %}
+{% end %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bodegas/dist/bodegas.client.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="{{ site_base }}/static/css/main.css">
+<link rel="stylesheet" href="{{ site_base }}/static/css/header.css">
+<link rel="stylesheet" href="{{ site_base }}/static/css/footer.css">
+<link rel="stylesheet" href="{{ site_base }}/static/css/ocul.css">
+{% end %}
+
+{% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/product_detail.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/app.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function()
+    {
+        $(document).on("click", '.producto-preview-item', function(){
+            console.log($(this).attr("src"));
+            $("#img_detail").attr("src", $(this).attr('src'));
+        });
+
+    var base_url = $.environmentVar(
+        'https://apibodegas.loadingplay.com/',
+        'https://apibodegas.loadingplay.com/',
+        'https://apibodegas.loadingplay.com/');
+    var checkout_url = $.environmentVar(
+        'https://pay.loadingplay.com',
+        'https://pay.loadingplay.com',
+        'https://pay.loadingplay.com');
+    var app_public = $.environmentVar(60,60,60);
+    var site_name = $.environmentVar('videocorp', 'videocorp', 'videocorp'); 
+        
+
+        $(document).ecommerce('product_detail', {
+            'app_public' : app_public,
+            'base_url' : base_url,
+            'checkout_url': checkout_url,
+            'product_id' : {{ product_id }},
+            'container' : '.product-detail',
+            onLoad: function(product)
+            {
+                if(product.tags != undefined)
+                {
+                    for(i in product.tags)
+                    {
+                        if(product.tags[i].name.indexOf("cat2_") != -1)
+                        {
+                            related(product.tags[i].name);
+                        }
+                    }
+                }
+            }
+
+        })
+
+        // productos relacionados
+        var related = function(tag)
+        {
+
+            var config = {
+                'app_public' : app_public,
+                'base_url' : base_url,
+                'maxProducts' : 15,
+                'templateOrigin' : '#product_template_box',
+                'tag' : tag,
+                'ignore_stock' : true,
+                    'onLoad':function(){
+                        $(".product-related").slick({
+                            mobileFirst: true,
+                            slidesToScroll: 1,
+                            slidesToShow: 1,
+                            dots: false,
+                            prevArrow: "<img src='https://7static.loadingplay.com/static/images/5daa261ecc2951e2b42363b3c9051ffc_listaflecha.png' class='lista-slider-flecha lista-slider-flecha-prev'>",
+                            nextArrow: "<img src='https://7static.loadingplay.com/static/images/5daa261ecc2951e2b42363b3c9051ffc_listaflecha.png' class='lista-slider-flecha lista-slider-flecha-next'>",
+                            responsive: [
+                                {
+                                    breakpoint: 768,
+                                    settings: {
+                                        slidesToShow: 3
+                                    }
+                                },
+                                {
+                                    breakpoint: 992,
+                                    settings: {
+                                        slidesToShow: 4
+                                    }
+                                },
+                                {
+                                    breakpoint: 1200,
+                                    settings: {
+                                        slidesToShow: 5
+                                    }
+                                }
+                            ]
+                        });
+
+                     }
+                
+            };
+            $('.product-related').ecommerce('product_box', config);
+
+        };
+    });
+
+
+</script>
+
+<script type="text/template" id="product_detail">
+
+<section class="container producto">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="producto-main">
+                    <div class="producto-preview">
+                        <div class="producto-preview-lista">
+                            <img src="{{! images[0]['thumb_500'] }}" class="{{! images[0]['thumb_200']|hide_if_empty}} producto-preview-item" onload="this.onload='';this.src={{! images[0]['thumb_500']}}" />
+                            <img src="{{! images[1]['thumb_500'] }}" class="{{! images[1]['thumb_500']|hide_if_empty }} producto-preview-item" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
+                            <img src="{{! images[2]['thumb_500'] }}" class="{{! images[2]['thumb_500']|hide_if_empty }} producto-preview-item" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" />
+                            <img src="{{! images[3]['thumb_500'] }}" class="{{! images[3]['thumb_500']|hide_if_empty }} producto-preview-item" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
+                            <img src="{{! images[4]['thumb_500'] }}" class="{{! images[4]['thumb_500']|hide_if_empty }} producto-preview-item" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
+                            <img src="{{! images[5]['thumb_500'] }}" class="{{! images[5]['thumb_500']|hide_if_empty }} producto-preview-item" onload="this.onload='';this.src={{! images[5]['thumb_500']}}" />
+                        </div>
+                        <img id="img_detail" src="{{! images[0]['thumb_500']}}" alt="Producto" class="producto-preview-img">
+                    </div>
+                    <div class="producto-intro">
+                        <h2 class="producto-titulo">{{! name }}</h2>
+                        <h4 class="producto-subtitulo">{{! brand }}</h4>
+                        <h3 class="producto-precio">{{!main_price|money}}</h3>
+                        <p class="producto-parrafo">{{! bullet_1 }}</p>
+                        <a href="{{! bullet_3 }}" class="producto-parrafo producto-parrafo-link producto-ficha">Descargar ficha técnica</a>
+                    </div>
+                </div>
+                <div class="producto-descripcion">
+                    <p class="producto-parrafo">{{! description }}</p>
+                    <p class="producto-parrafo">{{! description }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</script>
+
+
+{% end %}
+
+
+
+{% block body %}
+
+
+
+<div class="product-detail"></div>
+    <section class="container lista">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="lista-grupo-wrapper">
+                    <div class="lista-grupo-header">
+                        <h4 class="lista-grupo-titulo">Productos de la misma categoría</h4>
+                        <a href="#" class="lista-grupo-link">Ver todos</a>
+                    </div>
+                    <div class="lista-grupo lista-grupo-borde lista-slider product-related">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% include '../home/footer.html' %}
+{% end %}

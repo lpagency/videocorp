@@ -1,0 +1,57 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+{% if is_admin %} 
+{% set editabletext = 'editabletext' %} 
+{% else %} 
+{% set editabletext = '' %} 
+{% end %}
+{% include '../home/header.html' %}
+{% end %}
+
+{% block scripts %}
+<script>
+  jQuery(document).ready(function(){
+    jQuery('.menulist').toggle();
+    jQuery('#hideshow').on('click', function(event) {
+      event.preventDefault();
+      jQuery('.menulist').toggle('hidde');
+    });
+  });
+</script>
+{% end %}
+
+{% block css%}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/main.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/header.css">
+    <link rel="stylesheet" href="{{ site_base }}/static/css/footer.css">
+{% end %}
+
+{% block body %}
+    <section class="container articulos">
+        <div class="row">
+          <div class=" articulos-titulo {{editabletext}}" text-id="{{ site.name + 'text_main_article' }}">{{ read_text(site.name +  'text_main_article') }}</div>
+            <div class="col-xs-12">
+                <div class="hidden"></div>
+                {{ getArticleList(tag='marcas') }}
+                {{ getArticleList(tag='marcas2') }}
+                {{ getArticleList(tag='marcas3') }}
+                {{ getArticleList(tag='marcas4') }}
+                {{ getArticleList(tag='marcas5') }}
+                {{ getArticleList(tag='marcas6') }}
+                {{ getArticleList(tag='marcas7') }}
+                {{ getArticleList(tag='marcas8') }}
+                {{ getArticleList(tag='marcas9') }}
+                {{ getArticleList(tag='marcas10') }}
+                {{ getArticleList(tag='marcas11') }}
+            </div>
+        </div>
+    </section>
+{% include ../home/footer.html %}
+{% end %}
