@@ -380,6 +380,7 @@ button:focus {
 }
 
 .logo-editable{
+  position: inherit !important;
   top: 65px !important;
   z-index: 1000 !important;
   right: inherit !important;
