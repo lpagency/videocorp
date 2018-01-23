@@ -141,7 +141,7 @@
                                 <input type="file" class="editableimage editar-header" image-id="{{ site.name }}_header_logo" name="image" id="img_header_logo" >
                             </div>
                         {% end %}
-                        <a id="{{ site.name + '_header_logo' }}" href="{{ read_link(site.name + '_header_logo') }}">
+                        <a id="{{ site.name + '_header_logo' }}" target="_blank" href="{{ read_link(site.name + '_header_logo') }}">
                             <img id="{{ site.name }}_header_logo" src="{{ read_image(site.name + '_header_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_header_logo',) }}'" class="footer-logo" alt="item">
                         </a>
                         {% if is_admin %}
