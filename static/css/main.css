@@ -101,6 +101,8 @@ button:focus {
 }
 
 .btn-block{
+    border: 1px solid #ccc;
+    color: #555;
     float: right;
     display: block;
     position: relative;
