@@ -1245,7 +1245,6 @@ button:focus {
 
 .lista-item:hover .lista-item-main {
   background-color: #dfdfdf;
-  text-decoration: none;
 }
 
 .lista-item:hover .lista-item-cta {
