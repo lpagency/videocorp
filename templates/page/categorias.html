@@ -18,6 +18,27 @@
 
 {% block javascript %}
     <script type="text/javascript" src="{{ site_base }}/static/js/cart.config.categ.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $("#searchform").submit(function(ev)
+            {
+                var input = $(".header-buscar-input").val();
+                if(input == "")
+                {
+                    $(".alerta-search").removeClass("hidden");
+                    ev.preventDefault();
+                }
+                else
+                {
+                    if(!$(".alerta-search").hasClass("hidden"))
+                    {
+                        $(".alerta-search").addClass("hidden");
+                    }
+                }
+            });
+        });
+    </script>
 {% end %}
 
 
