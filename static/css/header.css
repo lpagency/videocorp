@@ -562,8 +562,23 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
 @media screen and (min-width: 768px) {
   .header-buscar-input {
     height: 2.5rem;
-    padding: 0 3.1875rem;
+    position: relative;
+    left: 3.1875rem;
+    width: 87%;
     font-size: 0.75rem;
+    padding: 0 0 0 0;
+    border: none;
+  }
+
+  .form-search{
+    border: 1px solid #807a75;
+    border-radius: 7px;
+  }
+
+  .btn-search{
+    z-index: 999999999;
+    position: relative;
+    right: 375px;
   }
 }
 

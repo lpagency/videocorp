@@ -8,7 +8,7 @@
                             <label for="img_header_logo">
                                 <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                             </label>
-                            <input type="file" class="editableimage editar-header" image-id="{{ site.name }}_header_logo" name="image" id="img_header_logo" >
+                            <input type="file" class="editableimage editar-header" image-id="{{ site.name }}_header_logo" name="image" id="img_header_logo" style="width: 20px;">
                         </div>
                     {% end %}
                     <a id="{{ site.name + '_logo' }}" href="#">
@@ -19,9 +19,12 @@
                 </a>
                 <div class="header-buscar">
                   <form id="searchform" class="form-search" role="search" action="{{ site_base }}/productos" method="get">
-                    <img src="https://7static.loadingplay.com/static/images/e484eecbdb1844cd651c205a6c63559a_ilupa.png" alt="Buscar" class="header-buscar-icono">
                     <input type="text" name="search_query" class="header-buscar-input" placeholder="BUSCA AQUÍ TUS PRODUCTOS" value="{% try %}{{search_query}}{% except %}{% end %}">
+                    <button type="submit" id="send" class="btn-search">
+                      <img src="https://7static.loadingplay.com/static/images/e484eecbdb1844cd651c205a6c63559a_ilupa.png">
+                    </button>
                   </form>
+                  <h6 class="alerta-search hidden">Este campo no puede estar vacío</h6>
                 </div>
                 <h4 class="header-tel">LLÁMANOS &nbsp;&nbsp;&nbsp;<a href="tel:(+56 2) 2431 6100" class="header-tel-link">(+56 2) 2431 6100</a></h4>
                 <div class="visible-xs header-btn">

@@ -100,6 +100,10 @@ button:focus {
   margin-top: 9.167rem;
 }
 
+.alerta-search{
+  color: #032e5a;
+}
+
 .btn-block{
     border: 1px solid #ccc;
     color: #999;
