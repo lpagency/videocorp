@@ -18,8 +18,10 @@
                     </a>
                 </a>
                 <div class="header-buscar">
+                  <form id="searchform" class="form-search" role="search" action="{{ site_base }}/productos" method="get">
                     <img src="https://7static.loadingplay.com/static/images/e484eecbdb1844cd651c205a6c63559a_ilupa.png" alt="Buscar" class="header-buscar-icono">
-                    <input type="text" class="header-buscar-input" placeholder="BUSCA AQUÍ TUS PRODUCTOS">
+                    <input type="text" name="search_query" class="header-buscar-input" placeholder="BUSCA AQUÍ TUS PRODUCTOS" value="{% try %}{{search_query}}{% except %}{% end %}">
+                  </form>
                 </div>
                 <h4 class="header-tel">LLÁMANOS &nbsp;&nbsp;&nbsp;<a href="tel:(+56 2) 2431 6100" class="header-tel-link">(+56 2) 2431 6100</a></h4>
                 <div class="visible-xs header-btn">
