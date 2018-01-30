@@ -54,22 +54,6 @@
       
       <div id="navbar9" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-left">
-        <!--<div class="logo_wrapper navbar-brand" style="padding: 0px; position: relative;">
-                {% if is_admin %}
-                <div class="image-upload visible-movil">
-                    <label for="img_logo">
-                       <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-                   </label>
-                    <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo" name="image" id="img_logo" >
-                </div>
-                {% end %}
-                <a id="{{ site.name + '_logo' }}" href="#">
-                  <div class="base-logo">
-                    <img class="logo" id="{{ site.name }}_img_logo" src="{{ read_image(site.name + '_img_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo',500) }}'" alt="item" style="margin-right: 10px; padding: 0;">
-                    </div>
-                </a>
-            </div> -->
-
           <!-- CATEGORIA AUDIO PROFESIONAL -->
           <div class="w3-dropdown-hover">
             <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/productos?tag=cat1_audio_profesional'">AUDIO PROFESIONAL</button>
@@ -88,6 +72,8 @@
                             <li><a href="{{ site_base }}/productos?tag=cat3_inalambricos">MICRÓFONOS INALÁMBRICOS</a></li>
                         </ul>
                     </li>
+                    <li><a tabindex="-1" href="{{ site_base }}/productos?tag=cat2_audifonos">AUDIFONOS</a></li>
+                    <li><a tabindex="-1" href="{{ site_base }}/productos?tag=cat2_cable_instalacion">CABLE INSTALACIÓN</a></li>
                 </ul>
           </div>
           <!-- CATEGORIA VIDEO PROFESIONAL -->
