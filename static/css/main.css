@@ -289,7 +289,7 @@ button:focus {
 .overlay.homi2 {
     top: 0px;
     bottom: 0;
-    left: 395px;
+    left: 400px;
     right: 0;
     height: 46.2%;
     width: 31.6%;
@@ -302,7 +302,7 @@ button:focus {
 .overlay.homi3 {
     top: 0px;
     bottom: 0;
-    left: 775px;
+    left: 785px;
     right: 0;
     height: 46.2%;
     width: 31.6%;
@@ -318,7 +318,7 @@ button:focus {
     left: 14px;
     right: 0;
     height: 46.2%;
-    width: 48.6%;
+    width: 48.9%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
