@@ -273,6 +273,74 @@ button:focus {
     z-index: 100000;
 }
 
+.overlay.homi {
+    top: 0px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 46.2%;
+    width: 31.6%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
+}
+
+.overlay.homi2 {
+    top: 0px;
+    bottom: 0;
+    left: 395px;
+    right: 0;
+    height: 46.2%;
+    width: 31.6%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
+}
+
+.overlay.homi3 {
+    top: 0px;
+    bottom: 0;
+    left: 775px;
+    right: 0;
+    height: 46.2%;
+    width: 31.6%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
+}
+
+.overlay.homi4 {
+    top: 374px;
+    bottom: 0;
+    left: 14px;
+    right: 0;
+    height: 46.2%;
+    width: 48.6%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
+}
+
+.container-h.homi:hover .overlay.homi {
+  opacity: 1;
+}
+
+.container-h.homi:hover .overlay.homi2 {
+  opacity: 1;
+}
+
+.container-h.homi:hover .overlay.homi3 {
+  opacity: 1;
+}
+
+.container-h.homi-l:hover .overlay.homi4 {
+  opacity: 1;
+}
+
 .button_5_2.editablelink {
     position: absolute;
     left: inherit;
@@ -578,6 +646,16 @@ button:focus {
   color: #414242;
   text-decoration: none;
   outline: none;
+  width: 370px;
+  max-width: none;
+}
+
+.lineas-menu-link-l:link, .lineas-menu-link-l:hover, .lineas-menu-link-l:visited, .lineas-menu-link-l:focus {
+  color: #414242;
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  max-width: none;
 }
 
 /*   ***   /[lineas]***   */
@@ -635,6 +713,14 @@ button:focus {
   .banner-titulo-alt {
     left: 3.125rem;
     bottom: 1.25rem;
+  }
+
+  .banner-abajo{
+    overflow: hidden;
+    max-height: 228px;
+    left: 3.125rem;
+    bottom: 7.25rem;
+    width: 75%;
   }
 }
 
@@ -748,6 +834,10 @@ button:focus {
   .galeria-item {
     height: 21.5625rem;
   }
+
+  .galeria-item-l{
+    width: 100% !important;
+  }
 }
 
 .galeria-item + .galeria-item {
@@ -758,6 +848,15 @@ button:focus {
   .galeria-item + .galeria-item {
     margin-top: 0;
     margin-left: 0.9375rem;
+  }
+  .container-h.homi {
+      width: 370px;
+      height: 345px;
+  }
+
+  .container-h.homi-l {
+      width: 570px;
+      height: 345px;
   }
 }
 
