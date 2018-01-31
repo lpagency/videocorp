@@ -305,20 +305,8 @@
                         {% end %}
                     </div>
                     <div class="galeria-item large-img">
-                        {% if is_admin %}
-                            <div class="image-upload logo-editable visible-movil">
-                                <label for="img_header_main_img_5">
-                                    <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-                                </label>
-                                <input type="file" class="editableimage editar-header" image-id="{{ site.name }}_header_main_img_5" name="image" id="img_header_main_img_5" >
-                            </div>
-                        {% end %}
-                        <a id="{{ site.name + '_banner_5' }}" href="{{ read_link(site.name + '_banner_5') }}" class="lineas-menu-link">
-                            <img id="{{ site.name }}_header_main_img_5" src="{{ read_image(site.name + '_header_main_img_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_header_main_img_5',) }}'" class="galeria-item-img" alt="item">
-                        </a>
-                        {% if is_admin %}
-                            <img class= "change-image editablelink _banner_1" link-id="{{ site.name + '_banner_5' }}" content="{{ read_link(site.name + '_banner_5') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
-                        {% end %}
+                        
+                        <iframe src="https://player.vimeo.com/video/253506197" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
