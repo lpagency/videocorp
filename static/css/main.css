@@ -1923,6 +1923,73 @@ button:focus {
   .galeria-grupo {
     margin-bottom: 11%;
   }
+
+  .overlay.homi {
+      top: 45px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 19%;
+      width: 92.5%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi2 {
+      top: 423px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 19%;
+      width: 92.5%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi3 {
+      top: 801px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 19%;
+      width: 91.6%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi4 {
+      top: 1218px;
+      bottom: 0;
+      left: 14px;
+      right: 0;
+      height: 13.2%;
+      width: 92.8%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .container-h{
+        padding-bottom: 20px;
+  }
+
+  .banner-titulo-mobile {
+    color: #fcfcfa;
+    padding: 0;
+    position: absolute;
+    bottom: 1.0833rem;
+    left: 1.0833rem;
+    left: 0.8125rem;
+    bottom: 0.8125rem;
+    font-size: 1.875rem;
+  }
  
 }
 
