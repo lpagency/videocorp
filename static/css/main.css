@@ -1989,8 +1989,122 @@ button:focus {
     left: 0.8125rem;
     bottom: 0.8125rem;
     font-size: 1.875rem;
+    overflow: hidden;
+    max-height: 252px;
   }
  
+}
+
+@media only screen and (max-width: 380px){
+  .overlay.homi {
+      top: 45px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 18.4%;
+      width: 91.5%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi2 {
+      top: 389px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 18.4%;
+      width: 91.5%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi3 {
+      top: 732px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 18.4%;
+      width: 91.6%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi4 {
+      top: 1110px;
+      bottom: 0;
+      left: 14px;
+      right: 0;
+      height: 12.8%;
+      width: 92%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .banner-titulo-mobile-2{
+      max-height: 186px !important;
+  }
+}
+
+@media only screen and (max-width: 325px){
+  .overlay.homi {
+      top: 45px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 17.4%;
+      width: 89.5%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi2 {
+      top: 340px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 17.4%;
+      width: 89.5%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi3 {
+      top: 636px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 17.4%;
+      width: 89.6%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi4 {
+      top: 959px;
+      bottom: 0;
+      left: 14px;
+      right: 0;
+      height: 12.1%;
+      width: 90%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
 }
 
 /*   ***   /[producto]***   */
