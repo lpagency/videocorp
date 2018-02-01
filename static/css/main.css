@@ -1920,6 +1920,17 @@ button:focus {
 }
 
 @media only screen and (max-width: 420px){
+
+  .logo-mobile-xs{
+    height: 66.63px;
+    max-height: 66.33px;
+  }
+
+  .logos-item {
+      margin: 0rem;
+      width: 100%;
+  }
+
   .galeria-grupo {
     margin-bottom: 11%;
   }
@@ -2050,16 +2061,6 @@ button:focus {
 
   .banner-titulo-mobile-2{
       max-height: 186px !important;
-  }
-
-  .logo-mobile-xs{
-    height: 66.63px;
-    max-height: 66.33px;
-  }
-
-  .logos-item {
-      margin: 0rem;
-      width: 100%;
   }
 }
 
