@@ -2052,9 +2052,14 @@ button:focus {
       max-height: 186px !important;
   }
 
-  .logos-mobile-xs{
+  .logo-mobile-xs{
     height: 66.63px;
     max-height: 66.33px;
+  }
+
+  .logos-item {
+      margin: 0rem;
+      width: 100%;
   }
 }
 
