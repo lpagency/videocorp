@@ -24,6 +24,20 @@ body {
   left: 327px !important;
 }
 
+  .container-h.homi {
+      width: 370px;
+      height: 345px;
+  }
+
+  .container-h.homi-l {
+      width: 570px;
+      height: 345px;
+  }
+
+  .galeria-grupo-dos .galeria-item {
+    width: 50%;
+  }
+
 img.editablelink{
   z-index: 1000 !important;
 }
@@ -486,6 +500,99 @@ button:focus {
   .lineas {
     margin-top: 6.875rem;
   }
+
+  .banner-main-bg{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .container-h.homi {
+      margin-left: 5px;
+      width: 225px;
+      height: 210px;
+  }
+
+  .container-h.homi-l{
+    height: 210px;
+    width: 395px;
+  }
+
+  .mobile-video{
+      margin-right: 11px;
+  }
+
+  .overlay.homi4 {
+    top: 235px;
+    bottom: 0;
+    left: 19px;
+    right: 0;
+    height: 44.7%;
+    width: 48.9%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
+}
+
+.banner-footer-logo{
+  right: 450px !important;
+}
+
+.footer-main {
+    left: 420px !important;
+}
+
+.f-siguenos {
+    left: 0px !important;
+}
+
+  .overlay.homi3 {
+      top: 0px;
+      bottom: 0;
+      left: 500px;
+      right: 0;
+      height: 34.5%;
+      width: 30%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi2 {
+      top: 0px;
+      bottom: 0;
+      left: 260px;
+      right: 0;
+      height: 34.6%;
+      width: 30%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .overlay.homi {
+      top: 0px;
+      bottom: 0;
+      left: 19px;
+      right: 0;
+      height: 34.6%;
+      width: 30.2%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(52, 58, 60, 0.51);
+      position: absolute;
+  }
+
+  .galeria-grupo-dos .galeria-item {
+      width: 93%;
+      margin-left: 4px;
+  }
+
+  .con-mobile{
+    margin-top: 150px;
+  }
 }
 
 .lineas-alt {
@@ -807,9 +914,6 @@ button:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .galeria-grupo-dos .galeria-item {
-    width: 50%;
-  }
 }
 
 .galeria-item {
@@ -848,15 +952,6 @@ button:focus {
   .galeria-item + .galeria-item {
     margin-top: 0;
     margin-left: 0.9375rem;
-  }
-  .container-h.homi {
-      width: 370px;
-      height: 345px;
-  }
-
-  .container-h.homi-l {
-      width: 570px;
-      height: 345px;
   }
 }
 
