@@ -2051,6 +2051,11 @@ button:focus {
   .banner-titulo-mobile-2{
       max-height: 186px !important;
   }
+
+  .logos-mobile-xs{
+    height: 66.63px;
+    max-height: 66.33px;
+  }
 }
 
 @media only screen and (max-width: 325px){
