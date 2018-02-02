@@ -2209,6 +2209,10 @@ button:focus {
     height: auto;
 }
 
+.mobile-video{
+  margin-left: 30px;
+}
+
 .container-h.homi {
     margin-left: 13px;
     margin-bottom: 100px;
