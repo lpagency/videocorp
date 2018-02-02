@@ -23,7 +23,6 @@ body {
 .banner-titulo {
     color: #fcfcfa;
     padding: 0;
-    position: absolute;
     bottom: 1.0833rem;
     left: 1.0833rem;
     left: 0.8125rem;
@@ -888,7 +887,6 @@ button:focus {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
-  color: #373838;
   padding: 1.0833rem 0 0 1.0833rem;
 }
 
