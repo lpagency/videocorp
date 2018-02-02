@@ -496,7 +496,7 @@ button:focus {
   left: 1100px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 780px) {
   .lineas {
     margin-top: 6.875rem;
   }
@@ -551,7 +551,7 @@ button:focus {
       bottom: 0;
       left: 500px;
       right: 0;
-      height: 34.5%;
+      height: 44.6%;
       width: 30%;
       opacity: 0;
       transition: .5s ease;
@@ -564,7 +564,7 @@ button:focus {
       bottom: 0;
       left: 260px;
       right: 0;
-      height: 34.6%;
+      height: 44.6%;
       width: 30%;
       opacity: 0;
       transition: .5s ease;
@@ -577,7 +577,7 @@ button:focus {
       bottom: 0;
       left: 19px;
       right: 0;
-      height: 34.6%;
+      height: 44.6%;
       width: 30.2%;
       opacity: 0;
       transition: .5s ease;
@@ -2016,6 +2016,12 @@ button:focus {
 
 @media only screen and (max-width: 420px){
 
+  .container-h.homi {
+    margin-left: 5px;
+    margin-bottom: 145px;
+    width: 375px;
+  }
+
   .logo-mobile-xs{
     height: 66.63px;
     max-height: 66.33px;
@@ -2031,55 +2037,59 @@ button:focus {
   }
 
   .overlay.homi {
-      top: 45px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-      height: 19%;
-      width: 92.5%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 19px;
+    right: 0;
+    height: 21.4%;
+    width: 90.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi2 {
-      top: 423px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-      height: 19%;
-      width: 92.5%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 400px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    height: 21.4%;
+    width: 90.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi3 {
-      top: 801px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-      height: 19%;
-      width: 91.6%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 755px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    height: 21.4%;
+    width: 90.6%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi4 {
-      top: 1218px;
-      bottom: 0;
-      left: 14px;
-      right: 0;
-      height: 13.2%;
-      width: 92.8%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 1109px;
+    bottom: 0;
+    left: 18px;
+    right: 0;
+    height: 14.7%;
+    width: 88.8%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
+  }
+
+  .mobile-video{
+    margin-top: 80px;
   }
 
   .container-h{
@@ -2108,73 +2118,91 @@ button:focus {
     height: auto;
 }
 
+.container-h.homi {
+    margin-left: 13px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 210px;
+}
+
 .banner-main-bg{
   width: 100%;
     height: 145px;
 }
 
 .galeria-grupo-dos .galeria-item {
-    width: 64%;
+    width: 90%;
 }
 
   .overlay.homi {
-      top: 45px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-      height: 19%;
-      width: 91.5%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 28px;
+    right: 0;
+    height: 20.3%;
+    width: 85.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi2 {
-      top: 389px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-      height: 19%;
-      width: 91.5%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 355px;
+    bottom: 0;
+    left: 28px;
+    right: 0;
+    height: 20.3%;
+    width: 85.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi3 {
-      top: 732px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-      height: 19%;
-      width: 91.6%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 665px;
+    bottom: 0;
+    left: 28px;
+    right: 0;
+    height: 20.3%;
+    width: 85.6%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi4 {
-top: 1117px;
+    top: 975px;
     bottom: 0;
-    left: 14px;
+    left: 19px;
     right: 0;
-    height: 13%;
-    width: 91%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    height: 14.7%;
+    width: 88%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .banner-titulo-mobile-2{
       max-height: 186px !important;
   }
+
+  .mobile-video{
+        margin-top: 60px;
+  }
 }
 
 @media only screen and (max-width: 325px){
+
+  .container-h.homi {
+    margin-left: 13px;
+    margin-bottom: 46px;
+    width: 120%;
+    height: 210px;
+}
 
 .banner-main-bg{
   width: 100%;
@@ -2182,55 +2210,55 @@ top: 1117px;
 }
 
   .overlay.homi {
-      top: 45px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-    height: 15.7%;
-      width: 89.5%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 28px;
+    right: 0;
+    height: 19.3%;
+    width: 83.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi2 {
-      top: 340px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-    height: 15.8%;
-      width: 89.5%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 301px;
+    bottom: 0;
+    left: 27px;
+    right: 0;
+    height: 19.3%;
+    width: 84.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi3 {
-      top: 636px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-    height: 15.7%;
-    width: 89.5%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 557px;
+    bottom: 0;
+    left: 28px;
+    right: 0;
+    height: 19.3%;
+    width: 83.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi4 {
-    top: 1112px;
+    top: 813px;
     bottom: 0;
-    left: 15px;
+    left: 19px;
     right: 0;
-    height: 10.8%;
-    width: 88%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    height: 13.8%;
+    width: 86%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .galeria-item-img {
