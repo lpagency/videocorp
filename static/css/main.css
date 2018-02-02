@@ -608,7 +608,7 @@ button:focus {
     left: 19px;
     right: 0;
     height: 44.7%;
-    width: 48.9%;
+    width: 42.2%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -906,9 +906,9 @@ button:focus {
 
   .banner-abajo{
     overflow: hidden;
-    max-height: 228px;
+    max-height: 205px;
     left: 3.125rem;
-    bottom: 7.25rem;
+    bottom: 1rem;
     width: 75%;
   }
 }
