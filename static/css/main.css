@@ -502,10 +502,20 @@ button:focus {
   left: 1100px;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1050px){
   .galeria-grupo-tres .galeria-item {
       width: 100%;
   }
+
+  .banner-abajo {
+    overflow: hidden;
+    max-height: 205px;
+    left: 3.125rem;
+    bottom: 1rem;
+    width: 75%;
+  }
+
+
   .overlay.homi {
       top: 0px;
       bottom: 0;
@@ -598,7 +608,7 @@ button:focus {
     left: 19px;
     right: 0;
     height: 44.7%;
-    width: 42%;
+    width: 48.9%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
