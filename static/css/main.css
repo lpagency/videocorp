@@ -2167,12 +2167,12 @@ button:focus {
   }
 
   .overlay.homi4 {
-    top: 1109px;
+    top: 1113px;
     bottom: 0;
     left: 18px;
     right: 0;
     height: 14.7%;
-    width: 88.8%;
+    width: 90.8%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2197,7 +2197,7 @@ button:focus {
     bottom: 0.8125rem;
     font-size: 1.875rem;
     overflow: hidden;
-    max-height: 252px;
+    max-height: 199px;
   }
  
 }
@@ -2207,6 +2207,10 @@ button:focus {
     .galeria-item-img {
     width: 93%;
     height: auto;
+}
+
+.galeria-grupo-dos .galeria-item {
+    width: 95%;
 }
 
 .mobile-video{
