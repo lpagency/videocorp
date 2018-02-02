@@ -552,7 +552,6 @@ button:focus {
   .mobile-video{
       right: 26px;
     }
-  }
 
   .overlay.homi4 {
       top: 372px;
@@ -560,7 +559,7 @@ button:focus {
       left: 14px;
       right: 0;
       height: 36.5%;
-      width: 44.2%;
+      width: 47.2%;
       opacity: 0;
       transition: .5s ease;
       background-color: rgba(52, 58, 60, 0.51);
