@@ -517,6 +517,15 @@ button:focus {
       width: 100%;
   }
 
+  .galeria-grupo{
+    top: -55px;
+    position: relative;
+  }
+
+  .container-h.homi {
+    width: 295px;
+  }
+
   .banner-abajo {
     overflow: hidden;
     max-height: 205px;
@@ -527,46 +536,46 @@ button:focus {
 
 
   .overlay.homi {
-      top: 0px;
-      bottom: 0;
-      left: 15px;
-      right: 0;
-      height: 36.3%;
-      width: 29.6%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: -1px;
+    right: 0;
+    height: 78.3%;
+    width: 31.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi2 {
-      top: 0px;
-      bottom: 0;
-      left: 327px;
-      right: 0;
-      height: 36.3%;
-      width: 30%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 315px;
+    right: 0;
+    height: 78.3%;
+    width: 31.1%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi3 {
-      top: 0px;
-      bottom: 0;
-      left: 641px;
-      right: 0;
-      height: 36.3%;
-      width: 29.6%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 627px;
+    right: 0;
+    height: 78.3%;
+    width: 31.5%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .galeria-grupo-dos .galeria-item {
-      width: 80%;
+      width: 88%;
   }
 
   .mobile-video{
@@ -574,16 +583,16 @@ button:focus {
     }
 
   .overlay.homi4 {
-      top: 372px;
-      bottom: 0;
-      left: 14px;
-      right: 0;
-      height: 36.5%;
-      width: 47.2%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    height: 78.5%;
+    width: 53.3%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 }
 
@@ -613,12 +622,12 @@ button:focus {
   }
 
   .overlay.homi4 {
-    top: 235px;
+    top: 0px;
     bottom: 0;
-    left: 19px;
+    left: 5px;
     right: 0;
-    height: 44.7%;
-    width: 42.2%;
+    height: 99.7%;
+    width: 44.2%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -638,42 +647,42 @@ button:focus {
 }
 
   .overlay.homi3 {
-      top: 0px;
-      bottom: 0;
-      left: 500px;
-      right: 0;
-      height: 44.6%;
-      width: 30%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 485px;
+    right: 0;
+    height: 99.6%;
+    width: 31%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi2 {
-      top: 0px;
-      bottom: 0;
-      left: 260px;
-      right: 0;
-      height: 44.6%;
-      width: 30%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 246px;
+    right: 0;
+    height: 99.6%;
+    width: 31%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .overlay.homi {
-      top: 0px;
-      bottom: 0;
-      left: 19px;
-      right: 0;
-      height: 44.6%;
-      width: 30.2%;
-      opacity: 0;
-      transition: .5s ease;
-      background-color: rgba(52, 58, 60, 0.51);
-      position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 5px;
+    right: 0;
+    height: 99.6%;
+    width: 31.2%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(52, 58, 60, 0.51);
+    position: absolute;
   }
 
   .galeria-grupo-dos .galeria-item {
@@ -2113,6 +2122,10 @@ button:focus {
     width: 375px;
   }
 
+  .galeria-grupo-dos .galeria-item {
+    width: 95%;
+  }
+
   .logo-mobile-xs{
     height: 66.63px;
     max-height: 66.33px;
@@ -2130,10 +2143,10 @@ button:focus {
   .overlay.homi {
     top: 45px;
     bottom: 0;
-    left: 19px;
+    left: 5px;
     right: 0;
-    height: 21.4%;
-    width: 90.5%;
+    height: 36.1%;
+    width: 97.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2143,10 +2156,10 @@ button:focus {
   .overlay.homi2 {
     top: 400px;
     bottom: 0;
-    left: 20px;
+    left: 5px;
     right: 0;
-    height: 21.4%;
-    width: 90.5%;
+    height: 36%;
+    width: 97.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2156,10 +2169,10 @@ button:focus {
   .overlay.homi3 {
     top: 755px;
     bottom: 0;
-    left: 20px;
+    left: 5px;
     right: 0;
-    height: 21.4%;
-    width: 90.6%;
+    height: 36%;
+    width: 97.6%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2167,20 +2180,21 @@ button:focus {
   }
 
   .overlay.homi4 {
-    top: 1113px;
+    top: 45px;
     bottom: 0;
-    left: 18px;
+    left: 4px;
     right: 0;
-    height: 14.7%;
-    width: 90.8%;
+    height: 51.7%;
+    width: 97.8%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
     position: absolute;
-  }
+}
 
   .mobile-video{
-    margin-top: 80px;
+      margin-top: 80px;
+     margin-left: 35px !important;
   }
 
   .container-h{
@@ -2214,7 +2228,7 @@ button:focus {
 }
 
 .mobile-video{
-  right: -1px;
+    right: 30px;
 }
 
 .container-h.homi {
@@ -2236,10 +2250,10 @@ button:focus {
   .overlay.homi {
     top: 45px;
     bottom: 0;
-    left: 28px;
+    left: 13px;
     right: 0;
-    height: 20.3%;
-    width: 85.5%;
+    height: 34.3%;
+    width: 92.7%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2249,10 +2263,10 @@ button:focus {
   .overlay.homi2 {
     top: 355px;
     bottom: 0;
-    left: 28px;
+    left: 13px;
     right: 0;
-    height: 20.3%;
-    width: 85.5%;
+    height: 34.3%;
+    width: 93.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2262,10 +2276,10 @@ button:focus {
   .overlay.homi3 {
     top: 665px;
     bottom: 0;
-    left: 28px;
+    left: 13px;
     right: 0;
-    height: 20.3%;
-    width: 85.6%;
+    height: 34.3%;
+    width: 93.6%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2273,12 +2287,12 @@ button:focus {
   }
 
   .overlay.homi4 {
-    top: 975px;
+    top: 45px;
     bottom: 0;
-    left: 19px;
+    left: 4px;
     right: 0;
-    height: 14.7%;
-    width: 88%;
+    height: 47.7%;
+    width: 96%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2311,10 +2325,10 @@ button:focus {
   .overlay.homi {
     top: 45px;
     bottom: 0;
-    left: 28px;
+    left: 13px;
     right: 0;
-    height: 19.3%;
-    width: 83.5%;
+    height: 33%;
+    width: 92.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2324,10 +2338,10 @@ button:focus {
   .overlay.homi2 {
     top: 301px;
     bottom: 0;
-    left: 27px;
+    left: 13px;
     right: 0;
-    height: 19.3%;
-    width: 84.5%;
+    height: 33%;
+    width: 92.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2337,10 +2351,10 @@ button:focus {
   .overlay.homi3 {
     top: 557px;
     bottom: 0;
-    left: 28px;
+    left: 13px;
     right: 0;
-    height: 19.3%;
-    width: 83.5%;
+    height: 33%;
+    width: 92.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2348,12 +2362,12 @@ button:focus {
   }
 
   .overlay.homi4 {
-    top: 813px;
+    top: 45px;
     bottom: 0;
-    left: 19px;
+    left: 6px;
     right: 0;
-    height: 13.8%;
-    width: 86%;
+    height: 39.8%;
+    width: 94%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
