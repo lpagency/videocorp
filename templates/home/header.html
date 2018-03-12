@@ -21,7 +21,7 @@
                   <form id="searchform" class="form-search" role="search" action="{{ site_base }}/productos" method="get">
                     <input type="text" name="search_query" class="header-buscar-input" placeholder="BUSCA AQUÍ TUS PRODUCTOS" value="{% try %}{{search_query}}{% except %}{% end %}">
                     <button type="submit" id="send" class="btn-search">
-                      <img src="https://7static.loadingplay.com/static/images/e484eecbdb1844cd651c205a6c63559a_ilupa.png">
+                      <img src="https://7static.loadingplay.com/static/images/e484eecbdb1844cd651c205a6c63559a_ilupa.png" class="boton-lupa">
                     </button>
                   </form>
                   <h6 class="alerta-search hidden">Este campo no puede estar vacío</h6>
@@ -148,9 +148,12 @@
                     <li><a tabindex="-1" href="{{ site_base }}/productos?tag=cat4_gepco">GEPCO</a></li>
                 </ul>
           </div>
+          <div class="w3-dropdown-hover">
+            <button class="w3-btn w3-red" onclick="window.location.href='{{ site_base }}/contact'">CONTACTO</button>
+          </div>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ site_base }}/contact" class="text-header">CONTACTO</a>
+          <li><a data-toggle="modal" href="#myModal" class="text-header"><i class="fa fa-shopping-cart cart-modal" aria-hidden="true"></i></a>
           </li>
         </ul>
       </div>
@@ -229,6 +232,7 @@
                   </ul>
                 </li>
               <li><a href="{{ site_base }}/contact" class="text-header">CONTACTO</a></li>
+              <li><a data-toggle="modal" href="#myModal" class="text-header"><i class="fa fa-shopping-cart cart-modal" aria-hidden="true"></i></a></li>
             </ul>
 
             </div>

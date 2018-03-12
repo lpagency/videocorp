@@ -162,6 +162,23 @@
                         <h3 class="producto-precio">{{!main_price|money}}</h3>
                         <p class="producto-parrafo">{{! bullet_1 }}</p>
                         <a href="{{! bullet_3 }}" class="producto-parrafo producto-parrafo-link producto-ficha">Descargar ficha técnica</a>
+                        <div class="producto-boton">
+                        <button
+                             type="button"
+                             class="btn add-to-cart btn-success comprar"
+                             id="open-cart"
+                             data-toggle="modal"
+                             data-target="#myModal"
+                             product-upp="{{! upp }}"
+                             product-name="{{! name }}"
+                             product-price="{{! main_price }}"
+                             product-sku="{{! sku }}"
+                             product-id="{{! id }}"
+                             product-img="{{! images[0]['thumb_500'] }}"
+                             product-weight="{{! weight }}"
+                             lp-cart-add
+                             >Comprar</button>
+                    </div>
                     </div>
                 </div>
                 <div class="producto-descripcion">

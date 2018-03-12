@@ -48,7 +48,7 @@
     {% end %}
 
     {% block header %}{% end %} {% block body %}{% end %}
-    <!-- Modal -->
+        <!-- Modal del carrito de compras-->
     <div align="center">
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -65,16 +65,16 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th class="text-center">Cant</th>
-                                            <th class="text-right"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="shopping-cart">
-                                    </tbody>
-                                </table>
-                                <div class="checkout-form"></div>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th style="text-align: center;" colspan="2">Cant</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="shopping-cart">
+                                        </tbody>
+                                    </table>
+                                    <div class="checkout-form"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -82,7 +82,49 @@
             </div>
         </div>
     </div>
-    </div>
+
+    <!--script carrito de compras-->
+
+    <script type="text/x-template" id="shopping-cart-product">
+        <tr>
+            <td class="vert-align text-left">{{! name }}</td>
+            <td class="vert-align money">{{! price|money }}</td>
+            <td class="text-center vert-align">
+                <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
+                {{! quantity }}
+                <a href="#!" class="add-one" lp-cart-add-one="{{! id }}">+</a>
+            </td>
+        </tr>
+    </script>
+    <script type="text/x-template" id="shopping-cart-total" >
+        <tr>
+            <td>Total:</td> 
+            <td id="total" class="money lib" colspan="2">{{! total|money }}</td>
+        </tr>
+    </script>
+    <script type="text/x-template" id="shopping-cart-units-total" >
+        <span> {{! units_total }}</span>
+    </script>
+    <script type="text/x-template" id="shopping-cart-checkout-form" >
+        <form action="{{! checkout_url }}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
+            <input name="site_id" class="form-control required" type="hidden" value="60">
+            <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id }}">
+            <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
+            <div class="form-group text-center">
+                <button type="submit" class="btn bn" style="
+            background-color: rgba(0, 0, 0, 0.24); color: #777; width: 31%;border-radius: 0px; height: 51px; font-weight: 600; float:right;">PAGAR
+                </button>
+            </div>
+        </form>
+
+        <div class=""> 
+            <button class="modal-close btn bn" style="
+            background-color: rgba(0, 0, 0, 0.24); color: #777; width: 31%;border-radius: 0px; height: 51px; font-weight: 600; float:left;" data-dismiss="modal" aria-hidden="true">VOLVER
+                </button>
+        </div>
+    </script>
+
+<!--termino del carrito de compras-->
 
 
     <!-- gif loading editableimage -->
@@ -131,60 +173,6 @@
     });
     </script>
     <script src="{{ site_base }}/static/js/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
-<script type="text/x-template" id="shopping-cart-product">
-    <tr>
-        <td class="vert-align text-left">{{! name }}</td>
-        <td class="text-center2 vert-align">{{! price|money }}</td>
-        <td class="text-center vert-align fri" style="border-bottom: 1px solid #ddd;">
-            <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
-            {{! quantity }}
-            <a href="#!" class="add-one" lp-cart-add-one="{{! id }}" >+</a>
-        </td>
-        <td class="remove-from-cart text-center fri" lp-cart-remove="{{! id }}" aria-hidden="true"> X  </td>
-        <td class="text-center vert-align fri">
-            <a class="borrarproducto" cart-id="">
-                <i class="icon-close"></i>
-            </a>
-        </td>
-    </tr>
-</script>
-
-<script type="text/x-template" id="shopping-cart-total" >
-    <tr>
-    </tr>
-    <tr>
-        <td>Total:</td>
-        <td id="total" colspan="3" class="text-left total-modal lib">{{! total|money }}</td>
-        <td></td>
-    </tr>
-</script>
-
-<script type="text/x-template" id="shopping-cart-units-total" >
-    <span> {{! units_total }}</span>
-</script>
-
-<script type="text/x-template" id="shopping-cart-checkout-form" >
-    <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
-        <input name="site_id" class="form-control required" type="hidden" value="33">
-        <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
-        <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
-        <div class="form-group text-center">
-             <button type="submit" class="btn bn" style="background-color:#B40404;color: white;width: 31%;border-radius: 0px;height: 43px;font-weight: 100;float: right;">
-                PAGAR
-            </button>
-        </div>
-        <div class="">
-            <a class="modal-close pin" data-dismiss="modal" aria-hidden="true">VOLVER</a>
-        </div>
-    </form>
-</script>
-
-
-
-
-
-    <!-- termino carrito de compra -->
-
 
     {% block javascript %}
     {% end %}

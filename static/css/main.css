@@ -20,6 +20,10 @@ body {
   font-size: 12px;
 }
 
+a{
+  color: black !important;
+}
+
 .banner-titulo {
     color: #fcfcfa;
     padding: 0;
@@ -28,6 +32,32 @@ body {
     left: 0.8125rem;
     bottom: 0.8125rem;
     font-size: 1.875rem;
+}
+
+.producto-boton{
+    position: relative;
+    top: 50px;
+}
+
+.comprar{
+    color: white;
+    border-color: #002a59;
+    background-color: #002a59;
+}
+
+.comprar:hover {
+    background-color: #757db1;
+    border-color: #757db1;
+}
+
+.comprar:active {
+    background-color: #757db1;
+    border-color: #757db1;
+}
+
+.comprar:focus {
+    background-color: #757db1;
+    border-color: #757db1;
 }
 
 ._banner_1{
@@ -86,6 +116,7 @@ ol {
 input,
 button {
   border: none;
+  background: none;
 }
 
 input:focus,
@@ -2120,6 +2151,11 @@ button:focus {
     margin-left: 5px;
     margin-bottom: 145px;
     width: 375px;
+  }
+
+  .boton-lupa{
+    position: relative;
+    top: -30px;
   }
 
   .galeria-grupo-dos .galeria-item {
