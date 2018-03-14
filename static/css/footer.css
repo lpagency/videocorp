@@ -33,6 +33,13 @@
     text-align: center;
     font-size: 12px;
 }
+.face{
+    width: 54px;
+}
+
+.instagram{
+    width: 34px;
+}
 
 .footer_2{
   left: inherit !important;
