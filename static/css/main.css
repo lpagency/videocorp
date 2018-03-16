@@ -356,25 +356,33 @@ button:focus {
 }
 
 .overlay.homi2 {
- top: 45px;
+    top: 0px;
     bottom: 0;
-    left: 4px;
+    left: 0px;
     right: 0;
-    height: 88% !important;
-    width: 98%;
+    height: 100% !important;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
     position: absolute;
 }
 
-.overlay.homi3 {
-    top: 45px;
+
+ top: 45px;
     bottom: 0;
-    left: 5px;
+    left: 4px;
     right: 0;
     height: 88% !important;
-    width: 98% !important;
+    width: 98%;
+
+.overlay.homi3 {
+    top: 0px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 100% !important;
+    width: 92% !important;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -383,7 +391,7 @@ button:focus {
 
 .padding-r {
     padding-right: 15px;
-    padding-left: 0;
+/*    padding-left: 0;*/
 }
 
 .overlay.homi4 {
