@@ -1672,6 +1672,9 @@ button:focus {
 
 @media (max-width: 999px)
 {
+  .galeria-grupo-dos .galeria-item {
+    width: 93%;
+  }
   .container-h.homi {
     width: 226px;
     height: 240px;
@@ -1703,6 +1706,10 @@ button:focus {
   .base-logo{
     top: 0;
     left: 2%;
+  }
+
+  .logos-item{
+    width: 100%;
   }
 
   .btn-search{
