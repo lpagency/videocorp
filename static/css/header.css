@@ -613,9 +613,20 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
 
 
 @media (max-width: 1199px){
-    .navbar-nav.navbar-right:last-child {
+  .navbar-nav.navbar-right:last-child {
     margin-right: -27px;
-}
+  }
+
+  .navbar-left{
+    width: 104%;
+  }
+  #navbar9{
+    padding-right: 0;
+  }
+  .container-h.homi {
+    width: 300px;
+    height: 270px;
+  }
 
 }
 
