@@ -661,15 +661,16 @@ button:focus {
 
   .mobile-video{
       margin-right: 11px;
+      top: 55px;
   }
 
   .overlay.homi4 {
-    top: 0px;
+    top: 45px;
     bottom: 0;
-    left: 5px;
+    left: 0px;
     right: 0;
-    height: 99.7%;
-    width: 44.2%;
+    height: 88% !important;
+    width: 98%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2431,8 +2432,9 @@ top: 45px;
     bottom: 0;
     left: 5px;
     right: 0;
-    height: 73%;
-    width: 97%;
+    height: 73% !important;
+    width: 101%;
+    overflow: hidden;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2448,8 +2450,9 @@ top: 45px;
     bottom: 0;
     left: 5px;
     right: 0;
-    height: 73%;
-    width: 96.5%;
+    height: 73% !important;
+    width: 101%;
+    overflow: hidden;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2461,8 +2464,9 @@ top: 45px;
     bottom: 0;
     left: 5px;
     right: 0;
-    height: 73%;
-    width: 97.6%;
+    height: 73% !important;
+    width: 101%;
+    overflow: hidden;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2478,7 +2482,8 @@ top: 45px;
     bottom: 0;
     left: 4px;
     right: 0;
-    height: 80.7%;
+    height: 71.7%;
+    overflow: hidden;
     width: 97.8%;
     opacity: 0;
     transition: .5s ease;
@@ -2487,6 +2492,7 @@ top: 45px;
 }
 
   .mobile-video{
+    right: -21px !important;
     top: 50px !important;
     height: inherit !important;
     width: 100% !important;
@@ -2514,8 +2520,8 @@ top: 45px;
 @media only screen and (max-width: 380px){
 
     .galeria-item-img {
-    width: 93%;
-    height: 284px;
+    width: 97%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -2527,11 +2533,16 @@ top: 45px;
     right: 30px;
 }
 
+.container-h.homi-l {
+    left: 13px;
+    position: relative;
+}
+
 .container-h.homi {
-    margin-left: 0px;
+    margin-left: 12px;
     margin-bottom: 0px;
     width: 100%;
-    height: 210px;
+    height: 100%;
 }
 
 .banner-main-bg{
@@ -2548,7 +2559,7 @@ top: 45px;
     bottom: 0;
     left: 13px;
     right: 0;
-    height: 87%;
+    height: 81% !important;
     width: 92.7%;
     opacity: 0;
     transition: .5s ease;
@@ -2561,7 +2572,7 @@ top: 45px;
     bottom: 0;
     left: 13px;
     right: 0;
-    height: 87%;
+    height: 81% !important;
     width: 93.5%;
     opacity: 0;
     transition: .5s ease;
@@ -2574,8 +2585,8 @@ top: 45px;
     bottom: 0;
     left: 13px;
     right: 0;
-    height: 87%;
-    width: 93.6%;
+    height: 81% !important;
+    width: 93.6% !important;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2603,7 +2614,7 @@ top: 45px;
     margin-top: 0;
     margin-bottom: inherit;
     top: 0px !important;
-    right: 0px !important;
+    right: -21px !important;
   }
 }
 
