@@ -1627,8 +1627,12 @@ button:focus {
   }
 }
 
-@media nly screen and(max-width: 1198px)
+@media(max-width: 1199px)
 {
+    .container-h.homi {
+      width: 300px;
+      height: 270px;
+    }
   .cont-resp{
     padding-left: 0px;
     padding-right: 0px;
