@@ -24,6 +24,19 @@ a{
   color: black !important;
 }
 
+.sin-padding{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.padding-r{
+  padding-right: 0;
+}
+
+.padding-l{
+  padding-left: 0;
+}
+
 .banner-titulo {
     color: #fcfcfa;
     padding: 0;
@@ -70,14 +83,9 @@ a{
     max-width: 100% !important;
 }
 
-  .container-h.homi {
-      width: 370px;
-      height: 345px;
-  }
-
   .container-h.homi-l {
-      width: 570px;
-      height: 345px;
+    width: 100%;
+    height: 100%;
   }
 
   .galeria-grupo-dos .galeria-item {
@@ -337,10 +345,10 @@ button:focus {
 .overlay.homi {
     top: 0px;
     bottom: 0;
-    left: 15px;
+    left: 0;
     right: 0;
-    height: 46.2%;
-    width: 31.6%;
+    height: 100%;
+    width: 97%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -350,10 +358,10 @@ button:focus {
 .overlay.homi2 {
     top: 0px;
     bottom: 0;
-    left: 400px;
+    left: 0;
     right: 0;
-    height: 46.2%;
-    width: 31.6%;
+    height: 100%;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -363,10 +371,10 @@ button:focus {
 .overlay.homi3 {
     top: 0px;
     bottom: 0;
-    left: 785px;
+    left: 13px;
     right: 0;
-    height: 46.2%;
-    width: 31.6%;
+    height: 100%;
+    width: 97%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -374,16 +382,20 @@ button:focus {
 }
 
 .overlay.homi4 {
-    top: 374px;
+    top: 0;
     bottom: 0;
-    left: 14px;
+    left: 0;
     right: 0;
-    height: 46.2%;
-    width: 48.9%;
+    height: 100%;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
     position: absolute;
+}
+
+.mobile-video{
+  width: 100%;
 }
 
 .container-h.homi:hover .overlay.homi {
@@ -566,7 +578,7 @@ button:focus {
   }
 
 
-  .overlay.homi {
+/*  .overlay.homi {
     top: 0px;
     bottom: 0;
     left: -1px;
@@ -577,9 +589,9 @@ button:focus {
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
     position: absolute;
-  }
+  }*/
 
-  .overlay.homi2 {
+/*  .overlay.homi2 {
     top: 0px;
     bottom: 0;
     left: 315px;
@@ -603,15 +615,11 @@ button:focus {
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
     position: absolute;
-  }
+  }*/
 
   .galeria-grupo-dos .galeria-item {
       width: 88%;
   }
-
-  .mobile-video{
-      right: 26px;
-    }
 
   .overlay.homi4 {
     top: 0px;
@@ -644,8 +652,8 @@ button:focus {
   }
 
   .container-h.homi-l{
-    height: 210px;
-    width: 395px;
+    height: 100%;
+    width: 100%;
   }
 
   .mobile-video{
@@ -677,7 +685,7 @@ button:focus {
     left: 0px !important;
 }
 
-  .overlay.homi3 {
+/*  .overlay.homi3 {
     top: 0px;
     bottom: 0;
     left: 485px;
@@ -688,9 +696,9 @@ button:focus {
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
     position: absolute;
-  }
+  }*/
 
-  .overlay.homi2 {
+/*  .overlay.homi2 {
     top: 0px;
     bottom: 0;
     left: 246px;
@@ -701,7 +709,7 @@ button:focus {
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
     position: absolute;
-  }
+  }*/
 
   .overlay.homi {
     top: 0px;
@@ -1630,8 +1638,8 @@ button:focus {
 @media(max-width: 1199px)
 {
     .container-h.homi {
-      width: 300px;
-      height: 270px;
+      width: 100%;
+      height: 100%;
     }
   .cont-resp{
     padding-left: 0px;
@@ -1646,19 +1654,16 @@ button:focus {
   }
 
   .overlay.homi{
-    height: 36.2%;
+    height: 100%;
   }
   .overlay.homi2{
-    left: 332px;
-    height: 36.2%;
+    height: 100%;
   }
   .overlay.homi3{
-    left: 651px;
-    height: 36.2%;
+    height: 100%;
   }
   .overlay.homi4{
-    height: 36.2%;
-    width: 56.9%;
+    height: 100%;
   }
   .galeria-grupo-dos .galeria-item {
     width: 96%;
@@ -1690,10 +1695,6 @@ button:focus {
     left: 482px;
     height: 88.3%;
   }
-  .overlay.homi4{
-    height: 60.5%;
-    width: 69.3%;
-  }
 
   .resp-prod{
     height: 345px;
@@ -1703,6 +1704,10 @@ button:focus {
 
 @media (max-width: 760px)
 {
+
+  .galeria-grupo-dos .galeria-item {
+    width: 89%;
+  }
   .base-logo{
     top: 0;
     left: 2%;
@@ -1729,7 +1734,7 @@ button:focus {
     top: 42px;
   }
   .container-h.homi{
-    width: 238px;
+    width: 237px;
   }
   .overlay.homi{
     height: 81.6%;
@@ -1765,21 +1770,21 @@ button:focus {
   }
 }
 
-@media only screen and(max-width: 745px)
+@media (max-width: 745px)
 {
   .container-h.homi{
     width: 233px;
   }
 }
 
-@media only screen and(max-width: 712px)
+@media (max-width: 712px)
 {
   .container-h.homi{
     width: 222px;
   }
 }
 
-@media only screen and(max-width: 705px)
+@media (max-width: 705px)
 {
   .container-h.homi{
     width: 220px;
@@ -1826,40 +1831,34 @@ button:focus {
   }
 }
 
-@media only screen and (max-width: 701px)
+@media (max-width: 701px)
 {
   .container-h.homi{
     width: 218px;
   }
 }
 
-@media only screen and (max-width: 690px)
+@media (max-width: 690px)
 {
   .container-h.homi{
     width: 215px;
   }
 }
 
-@media only screen and (max-width: 686px)
+@media (max-width: 686px)
 {
   .container-h.homi{
     width: 213px;
   }
 }
 
-@media only screen and (max-width: 679px)
+@media (max-width: 679px)
 {
   .container-h.homi{
     width: 32.5%;
   }
 }
 
-@media only screen and (max-width: 625px)
-{
-  .container-h.homi{
-    width: 32.4%;
-  }
-}
 
 .lista-item-img-wrapper {
   margin: 0 auto 2.5rem auto;
@@ -2382,9 +2381,18 @@ button:focus {
 
 @media only screen and (max-width: 420px){
 
+  .mobil-padding{
+    padding-right: 15px;
+  }
+
+  .mobil-padding-2{
+    padding-right: 15px;
+    padding-left: 0;
+  }
+
   .container-h.homi {
     margin-left: 5px;
-    margin-bottom: 145px;
+    margin-bottom: 0px;
     width: 375px;
   }
 
@@ -2420,8 +2428,8 @@ button:focus {
     bottom: 0;
     left: 5px;
     right: 0;
-    height: 36.1%;
-    width: 97.5%;
+    height: 73%;
+    width: 97%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2433,12 +2441,12 @@ button:focus {
   }
 
   .overlay.homi2 {
-    top: 400px;
+    top: 45px;
     bottom: 0;
     left: 5px;
     right: 0;
-    height: 36%;
-    width: 97.5%;
+    height: 73%;
+    width: 96.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2446,11 +2454,11 @@ button:focus {
   }
 
   .overlay.homi3 {
-    top: 755px;
+    top: 45px;
     bottom: 0;
     left: 5px;
     right: 0;
-    height: 36%;
+    height: 73%;
     width: 97.6%;
     opacity: 0;
     transition: .5s ease;
@@ -2458,12 +2466,16 @@ button:focus {
     position: absolute;
   }
 
+  .clear-bottom{
+    padding-bottom: 0px !important;
+  }
+
   .overlay.homi4 {
     top: 45px;
     bottom: 0;
     left: 4px;
     right: 0;
-    height: 73.7%;
+    height: 80.7%;
     width: 97.8%;
     opacity: 0;
     transition: .5s ease;
@@ -2472,9 +2484,9 @@ button:focus {
 }
 
   .mobile-video{
-      margin-top: 80px;
-     margin-left: 35px !important;
-         top: 146px;
+    top: 50px !important;
+    height: inherit !important;
+    width: 100% !important;
   }
 
   .container-h{
@@ -2513,8 +2525,8 @@ button:focus {
 }
 
 .container-h.homi {
-    margin-left: 13px;
-    margin-bottom: 100px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     width: 100%;
     height: 210px;
 }
@@ -2533,7 +2545,7 @@ button:focus {
     bottom: 0;
     left: 13px;
     right: 0;
-    height: 34.3%;
+    height: 87%;
     width: 92.7%;
     opacity: 0;
     transition: .5s ease;
@@ -2542,11 +2554,11 @@ button:focus {
   }
 
   .overlay.homi2 {
-    top: 355px;
+    top: 45px;
     bottom: 0;
     left: 13px;
     right: 0;
-    height: 34.3%;
+    height: 87%;
     width: 93.5%;
     opacity: 0;
     transition: .5s ease;
@@ -2555,11 +2567,11 @@ button:focus {
   }
 
   .overlay.homi3 {
-    top: 665px;
+    top: 45px;
     bottom: 0;
     left: 13px;
     right: 0;
-    height: 34.3%;
+    height: 87%;
     width: 93.6%;
     opacity: 0;
     transition: .5s ease;
@@ -2572,7 +2584,7 @@ button:focus {
     bottom: 0;
     left: 4px;
     right: 0;
-    height: 66.7%;
+    height: 73.7%;
     width: 96%;
     opacity: 0;
     transition: .5s ease;
@@ -2585,17 +2597,20 @@ button:focus {
   }
 
   .mobile-video{
-        margin-top: 60px;
+    margin-top: 0;
+    margin-bottom: inherit;
+    top: 0px !important;
+    right: 0px !important;
   }
 }
 
 @media only screen and (max-width: 325px){
 
   .container-h.homi {
-    margin-left: 13px;
-    margin-bottom: 46px;
-    width: 120%;
-    height: 210px;
+   margin-left: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: inherit;
 }
 
 .banner-main-bg{
@@ -2604,12 +2619,12 @@ button:focus {
 }
 
   .overlay.homi {
-    top: 45px;
+ top: 45px;
     bottom: 0;
-    left: 13px;
+    left: 0px;
     right: 0;
-    height: 33%;
-    width: 92.5%;
+    height: 70%;
+    width: 94.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2617,12 +2632,12 @@ button:focus {
   }
 
   .overlay.homi2 {
-    top: 301px;
+    top: 45px;
     bottom: 0;
-    left: 13px;
+    left: 0px;
     right: 0;
-    height: 33%;
-    width: 92.5%;
+    height: 70%;
+    width: 94.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2630,12 +2645,12 @@ button:focus {
   }
 
   .overlay.homi3 {
-    top: 557px;
+    top: 45px;
     bottom: 0;
-    left: 13px;
+    left: 0px;
     right: 0;
-    height: 33%;
-    width: 92.5%;
+    height: 70%;
+    width: 94.5%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -2643,11 +2658,11 @@ button:focus {
   }
 
   .overlay.homi4 {
-    top: 45px;
+ top: 45px;
     bottom: 0;
-    left: 6px;
+    left: 0px;
     right: 0;
-    height: 39.8%;
+    height: 70%;
     width: 94%;
     opacity: 0;
     transition: .5s ease;
@@ -2656,9 +2671,17 @@ button:focus {
   }
 
   .galeria-item-img {
-    width: 77%;
-    height: 235px;
+    width: 100%;
+    height: 100%;
 }
+}
+
+@media (max-width: 320px)
+{
+  .mobile-video{
+    margin-top: 0px;
+    width: 100% !important;
+  }
 }
 
 /*   ***   /[producto]***   */
