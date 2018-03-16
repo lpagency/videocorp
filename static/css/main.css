@@ -585,7 +585,7 @@ button:focus {
     left: 315px;
     right: 0;
     height: 78.3%;
-    width: 31.1%;
+    width: 32.1%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -595,7 +595,7 @@ button:focus {
   .overlay.homi3 {
     top: 0px;
     bottom: 0;
-    left: 627px;
+    left: 637px;
     right: 0;
     height: 78.3%;
     width: 31.5%;
@@ -1624,6 +1624,229 @@ button:focus {
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+  }
+}
+
+@media nly screen and(max-width: 1193px)
+{
+  .cont-resp{
+    padding-left: 0px;
+    padding-right: 0px;
+    left: -20px;
+    width: 104%;
+    position: relative;
+  }
+
+  .lineas-menu-link:link, .lineas-menu-link:hover, .lineas-menu-link:visited, .lineas-menu-link:focus {
+    width: 302px;
+  }
+
+  .overlay.homi{
+    height: 36.2%;
+  }
+  .overlay.homi2{
+    left: 332px;
+    height: 36.2%;
+  }
+  .overlay.homi3{
+    left: 651px;
+    height: 36.2%;
+  }
+  .overlay.homi4{
+    height: 36.2%;
+    width: 56.9%;
+  }
+  .galeria-grupo-dos .galeria-item {
+    width: 96%;
+  }
+
+  .galeria-itee-img{
+    object-fit: cover;
+  }
+
+}
+
+@media only screen and(max-width: 971px)
+{
+  .container-h.homi {
+    width: 226px;
+    height: 240px;
+  }
+  .overlay.homi{
+    height: 88.3%;
+  }
+  .overlay.homi2{
+    left: 243px;
+    height: 88.3%;
+  }
+  .overlay.homi3{
+    left: 482px;
+    height: 88.3%;
+  }
+  .overlay.homi4{
+    height: 60.5%;
+    width: 69.3%;
+  }
+
+  .resp-prod{
+    height: 345px;
+  }
+
+}
+
+@media only screen and(max-width: 760px)
+{
+  .base-logo{
+    top: 0;
+    left: 2%;
+  }
+
+  .btn-search{
+    top: -30px;
+    position: relative;
+  }
+
+  .con-mobile {
+    margin-top: 0px;
+  }
+
+  .logos-item{
+    width: 100%;
+  }
+  .overlay.homi{
+    height: 32.6px;
+    top: 42px;
+  }
+  .container-h.homi{
+    width: 238px;
+  }
+  .overlay.homi{
+    height: 81.6%;
+    width: 87.2%;
+  }
+  .galeria-item-img {
+    width: 100%;
+    height: 186px;
+    object-fit: cover;
+  }
+  .overlay.homi2{
+    height: 80.6%;
+    width: 87%;
+    left: 17px;
+    top: 44px;
+  }
+  .overlay.homi3{
+    height: 80.6%;
+    white-space: 87%;
+    top: 44px;
+    left: 12px;
+  }
+  .mobile-video{
+    top: 44px !important;
+    width: 48% !important;
+    float: right !important;
+    height: 187px !important;
+  }
+  .overlay.homi4{
+    top: 276px;
+    height: 87.7%;
+    width: 43.2%;
+  }
+}
+
+@media only screen and(max-width: 745px)
+{
+  .container-h.homi{
+    width: 233px;
+  }
+}
+
+@media only screen and(max-width: 712px)
+{
+  .container-h.homi{
+    width: 222px;
+  }
+}
+
+@media only screen and(max-width: 705px)
+{
+  .container-h.homi{
+    width: 220px;
+  }
+
+  .mobile-video{
+    height: 168px !important;
+  }
+  .galeria-item-img {
+    width: 100%;
+    height: 168px;
+    object-fit: cover;
+  }
+  .overlay.homi {
+    top: 45px;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    height: 81.6%;
+    width: 88.2%;
+  }
+  .overlay.homi2 {
+    top: 45px;
+    bottom: 0;
+    left: 17px;
+    right: 0;
+    height: 81.6%;
+    width: 88.2%;
+  }
+  .overlay.homi3 {
+    top: 45px;
+    bottom: 0;
+    left: 13px;
+    right: 0;
+    height: 81.6%;
+    width: 86.2%;
+  }
+  .overlay.homi4 {
+    top: 255px;
+    bottom: 0;
+    right: 0;
+    height: 47.2%;
+    width: 88.2%;
+  }
+}
+
+@media only screen and (max-width: 701px)
+{
+  .container-h.homi{
+    width: 218px;
+  }
+}
+
+@media only screen and (max-width: 690px)
+{
+  .container-h.homi{
+    width: 215px;
+  }
+}
+
+@media only screen and (max-width: 686px)
+{
+  .container-h.homi{
+    width: 213px;
+  }
+}
+
+@media only screen and (max-width: 679px)
+{
+  .container-h.homi{
+    width: 32.5%;
+  }
+}
+
+@media only screen and (max-width: 625px)
+{
+  .container-h.homi{
+    width: 32.4%;
   }
 }
 
