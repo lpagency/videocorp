@@ -885,7 +885,7 @@ button:focus {
   color: #414242;
   text-decoration: none;
   outline: none;
-  width: 128px;
+  width: 370px;
   max-width: none;
 }
 
@@ -1092,7 +1092,8 @@ button:focus {
 
 .galeria-item-img {
   width: 100%;
-  height: auto;
+    height: 331px;
+    object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -2228,7 +2229,7 @@ button:focus {
     bottom: 0;
     left: 4px;
     right: 0;
-    height: 51.7%;
+    height: 73.7%;
     width: 97.8%;
     opacity: 0;
     transition: .5s ease;
@@ -2239,6 +2240,7 @@ button:focus {
   .mobile-video{
       margin-top: 80px;
      margin-left: 35px !important;
+         top: 146px;
   }
 
   .container-h{
@@ -2264,7 +2266,8 @@ button:focus {
 
     .galeria-item-img {
     width: 93%;
-    height: auto;
+    height: 284px;
+    object-fit: cover;
 }
 
 .galeria-grupo-dos .galeria-item {
@@ -2335,7 +2338,7 @@ button:focus {
     bottom: 0;
     left: 4px;
     right: 0;
-    height: 47.7%;
+    height: 66.7%;
     width: 96%;
     opacity: 0;
     transition: .5s ease;
@@ -2420,7 +2423,7 @@ button:focus {
 
   .galeria-item-img {
     width: 77%;
-    height: auto;
+    height: 235px;
 }
 }
 
