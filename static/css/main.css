@@ -934,48 +934,6 @@ button:focus {
   padding: 1.0833rem 0 0 1.0833rem;
 }
 
-@media screen and (max-width: 768px) {
-  .banner-titulo {
-    color: #fcfcfa;
-    padding: 0;
-    position: absolute;
-    bottom: 1.0833rem;
-    left: 1.0833rem;
-    left: 0.8125rem;
-    bottom: 0.8125rem;
-    font-size: 1.875rem;
-  }
-  .overlay.homi {
-    top: 45px;
-    height: 88% !important;
-  }
-  .overlay.homi2 {
-    top: 45px;
-    height: 88% !important;
-    width: 98% !important;
-  }
-  .padding-r {
-    padding-right: 0px;
-    left: -14px;
-  }
-  .overlay.homi3 {
-    top: 45px;
-    height: 88% !important;
-    width: 98% !important;
-  }
-
-  .overlay.homi4 {
-    top: 45px;
-    height: 88% !important;
-    width: 98%;
-  }
-
-  .mobile-video {
-    margin-top: 25px;
-    margin-right: 11px;
-  }
-}
-
 .banner-titulo-alt {
   padding: 1.0833rem;
 }
@@ -1683,9 +1641,6 @@ button:focus {
     height: 100%;
     width: 95%;
   }
-  .overlay.homi2{
-    width: 90% !important;
-  }
   .overlay.homi3{
     height: 100%;
   }
@@ -1802,6 +1757,48 @@ button:focus {
     top: 46px;
     height: 86.7% !important;
     width: 98%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-titulo {
+    color: #fcfcfa;
+    padding: 0;
+    position: absolute;
+    bottom: 1.0833rem;
+    left: 1.0833rem;
+    left: 0.8125rem;
+    bottom: 0.8125rem;
+    font-size: 1.875rem;
+  }
+  .overlay.homi {
+    top: 45px;
+    height: 88% !important;
+  }
+  .overlay.homi2 {
+    top: 45px;
+    height: 88% !important;
+    width: 98% !important;
+  }
+  .padding-r {
+    padding-right: 0px;
+    left: -14px;
+  }
+  .overlay.homi3 {
+    top: 45px;
+    height: 88% !important;
+    width: 98% !important;
+  }
+
+  .overlay.homi4 {
+    top: 45px;
+    height: 88% !important;
+    width: 98%;
+  }
+
+  .mobile-video {
+    margin-top: 25px;
+    margin-right: 11px;
   }
 }
 
