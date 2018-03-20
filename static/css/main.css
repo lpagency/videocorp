@@ -361,7 +361,7 @@ button:focus {
     left: 0px;
     right: 0;
     height: 100% !important;
-    width: 100%;
+    width: 100% !important;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -576,7 +576,7 @@ button:focus {
 
   .banner-abajo {
     overflow: hidden;
-    max-height: 205px;
+    max-height: 264px;
     left: 3.125rem;
     bottom: 1rem;
     width: 75%;
@@ -688,39 +688,28 @@ button:focus {
     left: 0px !important;
 }
 
-/*  .overlay.homi3 {
-    top: 0px;
-    bottom: 0;
-    left: 485px;
-    right: 0;
-    height: 99.6%;
-    width: 31%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(52, 58, 60, 0.51);
-    position: absolute;
-  }*/
+  .overlay.homi3 {
+    left: 19px;
+  }
 
-/*  .overlay.homi2 {
+  .overlay.homi2 {
+    left: 4px;
+    width: 94%;
+  }
+
+  .overlay.homi4{
     top: 0px;
-    bottom: 0;
-    left: 246px;
-    right: 0;
-    height: 99.6%;
-    width: 31%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(52, 58, 60, 0.51);
-    position: absolute;
-  }*/
+    height: 100% !important;
+    width: 96%;
+  }
 
   .overlay.homi {
-top: 45px;
+    top: 0px;
     bottom: 0;
     left: 5px;
     right: 0;
-    height: 87.6% !important;
-    width: 98%;
+    height: 100% !important;
+    width: 98% !important;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
@@ -955,6 +944,35 @@ top: 45px;
     left: 0.8125rem;
     bottom: 0.8125rem;
     font-size: 1.875rem;
+  }
+  .overlay.homi {
+    top: 45px;
+    height: 88% !important;
+  }
+  .overlay.homi2 {
+    top: 45px;
+    height: 88% !important;
+    width: 98% !important;
+  }
+  .padding-r {
+    padding-right: 0px;
+    left: -14px;
+  }
+  .overlay.homi3 {
+    top: 45px;
+    height: 88% !important;
+    width: 98% !important;
+  }
+
+  .overlay.homi4 {
+    top: 45px;
+    height: 88% !important;
+    width: 98%;
+  }
+
+  .mobile-video {
+    margin-top: 25px;
+    margin-right: 11px;
   }
 }
 
@@ -1663,9 +1681,10 @@ top: 45px;
 
   .overlay.homi{
     height: 100%;
+    width: 95%;
   }
   .overlay.homi2{
-    height: 100%;
+    width: 90% !important;
   }
   .overlay.homi3{
     height: 100%;
@@ -1690,10 +1709,10 @@ top: 45px;
   }
 
   .overlay.homi{
-    width: 94%;
+    width: 95%;
   }
   .overlay.homi2{
-    width: 94%;
+    width: 100%;
   }
   .overlay.homi3{
     width: 94%;
@@ -1703,6 +1722,18 @@ top: 45px;
     height: 345px;
   }
 
+}
+
+@media (max-width: 990px){
+  .overlay.homi {
+    width: 94%;
+  }
+  .overlay.homi3{
+    width: 88% !important;
+  }
+  .overlay.homi4{
+    width: 96%;
+  }
 }
 
 @media (max-width: 760px)
@@ -1752,10 +1783,8 @@ top: 45px;
     right: 17px;
   }
   .overlay.homi2{
-    height: 43.6% !important;
     width: 98%;
     left: 5px;
-    top: 390px;
   }
   .overlay.homi3{
     height: 87.6% !important;
@@ -1786,12 +1815,6 @@ top: 45px;
     width: 100%;
     object-fit: cover;
   }
-  .overlay.homi {
-    top: 45px;
-    bottom: 0;
-    left: 12px;
-    right: 0;
-  }
   .overlay.homi2 {
     top: 45px;
     bottom: 0;
@@ -1811,6 +1834,21 @@ top: 45px;
     bottom: 0;
     right: 0;
     width: 98.2% !important;
+  }
+}
+
+@media (max-width: 409px){
+  .overlay.homi{
+    width: 103% !important;
+  }
+  .overlay.homi2{
+    width: 103% !important;
+  }
+  .overlay.homi3{
+    width: 103% !important;
+  }
+  .padding-r{
+    left: 0px;
   }
 }
 
