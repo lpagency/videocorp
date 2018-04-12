@@ -1224,8 +1224,8 @@ button:focus {
 
 @media screen and (min-width: 992px) {
   .galeria-popup-img {
-    height: 70vh;
-    width: auto;
+    height: auto;
+    width: 100%;
   }
 }
 
