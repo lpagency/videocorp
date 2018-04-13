@@ -1222,18 +1222,23 @@ button:focus {
   height: auto;
 }
 
-@media screen and (min-width: 992px) {
-  .galeria-popup-img {
-    height: auto;
+@media screen and (min-width: 992px)
+{
+  .galeria-popup-img
+  {
+    height: 500px;
+    object-fit: contain;
     width: 100%;
   }
 }
 
-.galeria-popup-activo {
+.galeria-popup-activo
+{
   pointer-events: all;
 }
 
-.galeria-popup-activo:before {
+.galeria-popup-activo:before
+{
   opacity: 1;
   pointer-events: all;
 }
