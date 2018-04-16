@@ -2388,6 +2388,11 @@ button:focus {
 
 @media only screen and (max-width: 420px)
 {
+    .galeria-popup-contenido
+    {
+        margin-top: 26.75rem;
+    }
+
     .contact-success-banner
     {
         margin-left: 0%;
